@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Chat Room</title>
+    <title>Chat Room</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="dark-theme">
     <!-- App Container -->
     <div id="app-container">
         <!-- Sidebar -->
@@ -78,9 +78,6 @@
                     <button class="icon-btn" id="search-btn" title="Search messages">
                         <i class="fas fa-search"></i>
                     </button>
-                    <button class="icon-btn" id="info-btn" title="Chat info">
-                        <i class="fas fa-info-circle"></i>
-                    </button>
                 </div>
             </div>
             
@@ -99,9 +96,6 @@
             
             <div id="chat-input-container">
                 <div class="input-wrapper">
-                    <button class="emoji-btn" id="emoji-btn" title="Add emoji">
-                        <i class="far fa-smile"></i>
-                    </button>
                     <textarea 
                         id="message-input" 
                         placeholder="Type your message..." 
@@ -115,6 +109,7 @@
                         </button>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>

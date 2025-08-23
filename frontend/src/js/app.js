@@ -425,7 +425,7 @@ Session Statistics:
             // Get values from form
             this.state.username = $('#username').val() || 'User';
             this.state.userStatus = $('#user-status').val() || 'online';
-            this.state.theme = $('#theme').val() || 'light';
+            this.state.theme = $('#theme').val() || 'dark';
             this.state.fontSize = $('#font-size').val() || 'medium';
             this.state.soundEnabled = $('#sound-notifications').is(':checked');
             this.state.notificationsEnabled = $('#desktop-notifications').is(':checked');
