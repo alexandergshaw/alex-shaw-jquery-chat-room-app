@@ -6,7 +6,7 @@ $(document).ready(function() {
         state: {
             username: 'User',
             userStatus: 'online',
-            theme: 'light',
+            theme: 'dark',
             fontSize: 'medium',
             soundEnabled: true,
             notificationsEnabled: false,
@@ -206,9 +206,6 @@ $(document).ready(function() {
 
             this.state.messageCount++;
             this.updateStats();
-
-            // Show typing indicator and simulate bot response
-            this.simulateBotResponse(messageText);
             
             // Play send sound
             if (this.state.soundEnabled) {
@@ -406,7 +403,7 @@ Session Statistics:
         addWelcomeMessage() {
             this.addMessage({
                 user: 'System',
-                text: `Welcome to ChatPro, ${this.state.username}! 🎉\n\nThis is a modern chat interface with AI responses. Type /help for available commands.`,
+                text: `Welcome to ChatPro, ${this.state.username}! 🎉\n\nType /help for available commands.`,
                 type: 'other',
                 timestamp: new Date()
             });
